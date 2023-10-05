@@ -9,66 +9,98 @@
 </head>
 <body>
     <div class="row">
-        <div class="column" style="display: flex;">
-            <div class="block" style="flex-basis: 0;"> 
+        <div class="column" style="align-items: flex-end; justify-content: flex-end;">
+            <div class="block"> 
                 <i class="fas fa-dog fa-2x"></i>
             </div>
         </div>
-        <div class="column" style="display: flex;">
-            <div class="block" style="flex-basis: 0;"> 
+        <div class="column" style="align-items: flex-end; justify-content: space-evenly;">
+            <div class="block"> 
                 <i class="fas fa-dog fa-2x"></i>
             </div>
-    
-            <div class="block" style="flex-grow: 3; flex-basis: 0; text-align: center;">
-                <i class="fas fa-cat fa-2x"></i>
-                <i class="fas fa-cat fa-2x"></i>
-                <i class="fas fa-cat fa-2x"></i>
-            </div>
-    
-            <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <div class="block">
                 <i class="fas fa-kiwi-bird fa-2x"></i>
             </div>
-            <div class="block" style="flex-grow: 0; flex-basis: auto;">
+        </div>
+        <div class="column" style="align-items: flex-start; justify-content: space-around;">
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
+            </div>
+            <div class="block">
                 <i class="fas fa-kiwi-bird fa-2x"></i>
+            </div>
+        </div>
+        <div class="column" style="align-items: flex-start; justify-content: flex-end;">
+            <div class="block"> 
+                <i class="fas fa-dog fa-2x"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="block" style="flex-grow: 0; flex-basis: auto; ">
-            <i class="fas fa-2x fa-crow"></i>
-            ворона
+        <div class="column" style="align-items: flex-end; justify-content: center;">
+            <div class="block">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-kiwi-bird fa-2x"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
+            </div> 
+        </div>
+        
+        <div class="column" style="flex-basis: 432px; align-items: center; justify-content: center;">
+                <div class="block">
+                    <i class="fas fa-2x fa-dog"></i>
+                </div>
+                <div class="block">
+                    <i class="fas fa-cat fa-2x"></i>
+                </div>   
         </div>
 
-        <div class="block" style="flex-grow: 3; text-align: center;">
-            <i class="fas fa-2x fa-dog"></i>
-            <i class="fas fa-2x fa-dog"></i>
-        </div>
-        <div class="block" style="flex-grow: 0; flex-basis: auto; ">
-            <i class="fas fa-2x fa-dove"></i>
-            голубь
-        </div>
-        <div class="block" style="flex-grow: 1; ">
-            <i class="fas fa-2x fa-horse"></i>
-            лошадка
+        <div class="column" style="align-items: flex-start; justify-content: flex-start;">
+            <div class="block">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="block" style="flex-grow: 0; flex-basis: auto; ">
-            <i class="fas fa-2x fa-frog"></i>
+        <div class="column" style="align-items: flex-end;">
+            <div class="block">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
         </div>
-        <div class="block fish">
-            <i class="fas fa-2x fa-fish-fins"></i>
+        <div class="column" style="justify-content: flex-start; align-items: stretch;">
+            <div class="block">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
+            </div> 
         </div>
-        <div class="block fish">
-            <i class="fas fa-2x fa-fish-fins"></i>
-        </div>    
-        <div class="block fish">
-            <i class="fas fa-2x fa-fish-fins"></i>
+        <div class="column" style="align-items: stretch;">
+            <div class="block">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-kiwi-bird fa-2x"></i>
+            </div>
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
+            </div> 
         </div>
-        <div class="block" style="flex-grow: 0; flex-basis: auto; ">
-            <i class="fas fa-2x fa-frog"></i>
+        <div class="column" style="align-items: stretch; justify-content: space-around;">
+            <div class="block">
+                <i class="fas fa-cat fa-2x"></i>
+            </div> 
+            <div class="block">
+                <i class="fas fa-kiwi-bird fa-2x"></i>
+            </div>
         </div>
     </div>
 
@@ -80,8 +112,7 @@
         margin-bottom: 0.5rem;
         margin: 0.25rem; /* оступы вокруг блоков */
         padding: 0.5rem; /* отступы внутри блоков */
-        flex-grow: 1;
-        flex-basis: 0; 
+        text-align: center;
     }
 
     .row {
@@ -92,8 +123,11 @@
         align-items: stretch;
         display: flex;
         flex-direction: column;
+        flex-basis: 200px;
+        height: 200px;
         margin: 0.5em;
-        padding: 0.5em
+        padding: 0.5em;
+        background-color: orange;
     }
 </style> 
 </html>
